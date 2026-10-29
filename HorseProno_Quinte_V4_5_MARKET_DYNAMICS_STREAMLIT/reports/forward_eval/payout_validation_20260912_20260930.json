@@ -1,0 +1,13 @@
+{
+  "description": "Gagnants de la période de validation : log(rapport définitif e-Simple Gagnant / cote snapshot pré-course). Source : Supabase quinte_payouts_raw + forward_model_predictions (snapshot T-30..T-10, médiane T-23,8). Requête : scripts/sg_forward_sql.py --mode payout.",
+  "period": ["2026-09-12", "2026-09-30"],
+  "edges": [1.0, 3.0, 6.0, 12.0, 25.0, 1000000000.0],
+  "buckets": [
+    {"bucket": 0, "n": 112, "mean_lr": 0.1206, "q25_lr": -0.0088, "median_lr": 0.1281, "sd_lr": 0.2456, "mean_odds": 2.01},
+    {"bucket": 1, "n": 160, "mean_lr": -0.1167, "q25_lr": -0.3331, "median_lr": -0.1624, "sd_lr": 0.3295, "mean_odds": 4.39},
+    {"bucket": 2, "n": 192, "mean_lr": -0.1942, "q25_lr": -0.4678, "median_lr": -0.2009, "sd_lr": 0.4333, "mean_odds": 8.19},
+    {"bucket": 3, "n": 97, "mean_lr": -0.1328, "q25_lr": -0.4132, "median_lr": -0.0690, "sd_lr": 0.5294, "mean_odds": 15.87},
+    {"bucket": 4, "n": 30, "mean_lr": -0.2233, "q25_lr": -0.6545, "median_lr": -0.3431, "sd_lr": 0.7900, "mean_odds": 38.10}
+  ],
+  "global": {"n": 591, "mean_lr": -0.1049, "q25_lr": -0.3605, "median_lr": -0.0924, "sd_lr": 0.4368, "mean_minutes_before": 23.8}
+}

@@ -1,0 +1,4 @@
+# Dépendances minimales du mode observation Simple Gagnant (GitHub Actions).
+numpy>=2.0,<3
+pandas>=2.2,<3
+requests>=2.32,<3

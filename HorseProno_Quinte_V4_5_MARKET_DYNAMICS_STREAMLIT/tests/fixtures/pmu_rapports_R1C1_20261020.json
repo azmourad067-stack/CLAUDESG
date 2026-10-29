@@ -1,0 +1,12 @@
+[
+  {"audience": "NATIONAL", "miseBase": 100, "typePari": "E_SIMPLE_GAGNANT", "rembourse": false,
+   "famillePari": "Simple", "dividendeUnite": "PourUnEuro",
+   "rapports": [{"libelle": "e-Simple Gagnant", "dividende": 3120, "combinaison": [5],
+                 "dividendeUnite": "PourUnEuro", "nombreGagnants": 1462.0, "dividendePourUnEuro": 3120,
+                 "dividendePourUneMiseDeBase": 3120}]},
+  {"audience": "NATIONAL", "miseBase": 100, "typePari": "E_SIMPLE_PLACE", "rembourse": false,
+   "famillePari": "Simple", "dividendeUnite": "PourUnEuro",
+   "rapports": [{"libelle": "e-Simple Placé", "dividende": 850, "combinaison": [5], "dividendePourUnEuro": 850},
+                {"libelle": "e-Simple Placé", "dividende": 480, "combinaison": [13], "dividendePourUnEuro": 480},
+                {"libelle": "e-Simple Placé", "dividende": 350, "combinaison": [14], "dividendePourUnEuro": 350}]}
+]

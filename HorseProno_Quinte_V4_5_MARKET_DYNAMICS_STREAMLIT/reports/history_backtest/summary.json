@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "odds_timing": "cotes stockées après import (proches de la clôture, non horodatées)",
+    "settlement": "cote de décision (proxy, pas un rapport PMU)",
+    "races_analysed": 2468,
+    "status_counts": {
+      "NO BET — COURSE ÉCARTÉE": 2415,
+      "SURVEILLANCE": 40,
+      "CANDIDAT À TESTER": 13
+    },
+    "races_excluded": 2415,
+    "watch": 40,
+    "bets": 13,
+    "wins": 1,
+    "win_rate": 0.07692307692307693,
+    "stake": 13.0,
+    "profit": -9.6,
+    "roi": -0.7384615384615384,
+    "avg_odds": 7.338461538461539,
+    "median_odds": 3.9,
+    "max_drawdown": 9.6,
+    "roi_ci_low": -1.0,
+    "roi_ci_high": -0.2153846153846154,
+    "p_roi_positive": 0.013
+  },
+  "benchmarks": {
+    "favori_toutes_courses_retenues": {
+      "bets": 1739,
+      "wins": 583,
+      "win_rate": 0.33525014376078205,
+      "stake": 1739.0,
+      "profit": -229.5,
+      "roi": -0.13197239792984475,
+      "avg_odds": 2.8795859689476706,
+      "median_odds": 2.7,
+      "max_drawdown": 239.1999999999999,
+      "roi_ci_low": -0.1739842894481291,
+      "roi_ci_high": -0.08682860082304526,
+      "p_roi_positive": 0.0
+    },
+    "log_loss_par_course": {
+      "marche": 1.8703496080203843,
+      "modele": 1.8649281854745081,
+      "fondamental_seul": 2.2323142619580296,
+      "courses": 1842
+    }
+  },
+  "folds": [
+    {
+      "start": "2026-07-06",
+      "end": "2026-07-12",
+      "train_races": 1843,
+      "test_races": 352,
+      "status": "étape 2 non estimable (historique hors échantillon insuffisant) : bloc non joué"
+    },
+    {
+      "start": "2026-07-13",
+      "end": "2026-07-19",
+      "train_races": 2195,
+      "test_races": 360,
+      "status": "étape 2 non estimable (historique hors échantillon insuffisant) : bloc non joué"
+    },
+    {
+      "start": "2026-07-20",
+      "end": "2026-07-26",
+      "train_races": 2555,
+      "test_races": 321,
+      "alpha": 1.1115372609358112,
+      "gamma": -0.09674457461720477,
+      "stage2_races": 469,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-07-27",
+      "end": "2026-08-02",
+      "train_races": 2876,
+      "test_races": 359,
+      "alpha": 1.13349247383509,
+      "gamma": -0.14903705691095875,
+      "stage2_races": 693,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-08-03",
+      "end": "2026-08-09",
+      "train_races": 3235,
+      "test_races": 330,
+      "alpha": 1.1467249255055862,
+      "gamma": -0.15208856280017946,
+      "stage2_races": 937,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-08-10",
+      "end": "2026-08-16",
+      "train_races": 3565,
+      "test_races": 281,
+      "alpha": 1.1257872571012888,
+      "gamma": -0.0813212216701549,
+      "stage2_races": 1190,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-08-17",
+      "end": "2026-08-23",
+      "train_races": 3846,
+      "test_races": 307,
+      "alpha": 1.1435161360529815,
+      "gamma": -0.0766855375130812,
+      "stage2_races": 1418,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-08-24",
+      "end": "2026-08-30",
+      "train_races": 4153,
+      "test_races": 311,
+      "alpha": 1.1741254961174237,
+      "gamma": -0.12686718518117876,
+      "stage2_races": 1649,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-08-31",
+      "end": "2026-09-06",
+      "train_races": 4464,
+      "test_races": 317,
+      "alpha": 1.15866766084488,
+      "gamma": -0.12630904292254042,
+      "stage2_races": 1891,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-09-07",
+      "end": "2026-09-13",
+      "train_races": 4781,
+      "test_races": 161,
+      "alpha": 1.1532569099356842,
+      "gamma": -0.10595886423500743,
+      "stage2_races": 2106,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    },
+    {
+      "start": "2026-09-14",
+      "end": "2026-09-16",
+      "train_races": 4942,
+      "test_races": 81,
+      "alpha": 1.1511874647060145,
+      "gamma": -0.10341586478525411,
+      "stage2_races": 2234,
+      "payout_factors": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "status": "évalué"
+    }
+  ],
+  "selector": {
+    "min_runners": 5,
+    "max_runners": 20,
+    "booksum_min": 1.08,
+    "booksum_max": 1.4,
+    "max_missing_musique_share": 0.4,
+    "supported_families": [
+      "PLAT",
+      "TROT",
+      "OBSTACLE"
+    ],
+    "decision_window_min": 2.0,
+    "decision_window_max": 30.0,
+    "early_limit": 90.0,
+    "p_min": 0.05,
+    "odds_max": 30.0,
+    "ev_watch": 0.0,
+    "ev_test": 0.05,
+    "ev_validated": 0.1,
+    "require_ev_low_positive": true,
+    "require_ev_drift_positive": true,
+    "validated_segments": [],
+    "min_test_bets": 100,
+    "evidence_note": "Gelé le 2026-10-29 avant lecture de la période de test (01–23/10/2026). Validation 12–30/09/2026 : 563 courses, 29 candidats EV>0 après correction du rapport, 10 gagnants, profit -7,8 u ; aucun candidat robuste. Aucun segment validé."
+  },
+  "runners_file": "validated_history.csv"
+}

@@ -1,0 +1,3 @@
+# Développement / tests (non nécessaires à Streamlit Cloud).
+-r requirements.txt
+pytest>=8

@@ -1,0 +1,25 @@
+{
+  "min_runners": 5,
+  "max_runners": 20,
+  "booksum_min": 1.08,
+  "booksum_max": 1.4,
+  "max_missing_musique_share": 0.4,
+  "supported_families": [
+    "PLAT",
+    "TROT",
+    "OBSTACLE"
+  ],
+  "decision_window_min": 2.0,
+  "decision_window_max": 30.0,
+  "early_limit": 90.0,
+  "p_min": 0.05,
+  "odds_max": 30.0,
+  "ev_watch": 0.0,
+  "ev_test": 0.05,
+  "ev_validated": 0.1,
+  "require_ev_low_positive": true,
+  "require_ev_drift_positive": true,
+  "validated_segments": [],
+  "min_test_bets": 100,
+  "evidence_note": "Gelé le 2026-10-29 avant lecture de la période de test (01–23/10/2026). Validation 12–30/09/2026 : 563 courses, 29 candidats EV>0 après correction du rapport, 10 gagnants, profit -7,8 u ; aucun candidat robuste. Aucun segment validé."
+}

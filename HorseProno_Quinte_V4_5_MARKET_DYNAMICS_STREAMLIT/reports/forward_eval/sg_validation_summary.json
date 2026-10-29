@@ -1,0 +1,43 @@
+{
+  "model": "models/sg_model_v1.json",
+  "model_fingerprint": "9f773de2fd5e6d73ef87ab9806e4dc0a2b617771621660308d43f7321384e1a8",
+  "selector": "models/sg_selector_v1.json",
+  "data": {
+    "decision_odds": "forward_model_predictions.odds_snapshot (Supabase) — un snapshot par course entre T-30 et T-10, médiane T-23,8 min",
+    "settlement": "quinte_payouts_raw — rapports définitifs PMU e-Simple Gagnant (dividendePourUnEuro / 100)",
+    "race_filter": "marché complet (tous les partants cotés), un seul gagnant officiel, pas de remboursement, ≥ 4 partants",
+    "sql_generator": "scripts/sg_forward_sql.py (lecture seule) ; parité Python/SQL vérifiée (écart max 5e-7 sur l'utilité)"
+  },
+  "periods": {
+    "stage1_training": "2026-06-01 → 2026-09-11 (validated_history.csv, 4 873 courses)",
+    "validation": "2026-09-12 → 2026-09-30 (591 courses) : estimation de α, γ, facteur de rapport, choix des seuils",
+    "test": "2026-10-01 → 2026-10-23 (600 courses) : configuration gelée, aucune modification après lecture"
+  },
+  "validation": {
+    "alpha": 0.9576, "alpha_se": 0.0631, "gamma": 0.1481, "gamma_se": 0.0856,
+    "loglik_gain_vs_market_per_race": 0.00257,
+    "payout_ratio_winners_geo_mean": 0.900,
+    "payout_ratio_by_odds": {"<3": 1.128, "3-6": 0.890, "6-12": 0.823, "12-25": 0.876, "25+": 0.800},
+    "gated_races": 563,
+    "positive_ev_candidates": 29, "positive_ev_wins": 10, "positive_ev_profit_units": -7.8,
+    "robust_candidates": 0
+  },
+  "test": {
+    "races": 600,
+    "status_counts": {"NO BET — COURSE ÉCARTÉE": 582, "SURVEILLANCE": 14, "CANDIDAT À TESTER": 4, "OPPORTUNITÉ VALIDÉE PAR LE MODÈLE": 0},
+    "no_bet_detail": {"portes_qualite": 24, "ev_non_positive": 558},
+    "candidates_to_test": {"bets": 4, "wins": 2, "profit_units": -0.2},
+    "log_loss_per_race": {"market": 1.9723, "model": 1.9671, "fundamental_only": 2.1974, "uniform": 2.3963},
+    "log_loss_gain_per_race": 0.0052, "log_loss_gain_se": 0.0028,
+    "m8_existing_model_same_races": {"log_loss": 1.9614, "gain_per_race": 0.0110, "se": 0.0066},
+    "benchmark_favourite": {"bets": 576, "wins": 180, "profit_units": -64.0, "roi": -0.111},
+    "benchmark_model_top1": {"bets": 576, "wins": 181, "profit_units": -68.7, "roi": -0.119}
+  },
+  "existing_forward_experiments_resettled": {
+    "note": "Re-règlement des paris forward existants (forward_bets) avec les rapports définitifs officiels au lieu des cotes snapshot.",
+    "experiment_1_M8_edge2pp": {"bets_with_official_payout": 439, "recorded_profit_same_bets": 46.1, "official_profit": -45.4, "official_roi": -0.103},
+    "experiment_3_R1": {"bets_with_official_payout": 47, "official_profit": -11.7, "official_roi": -0.249},
+    "experiment_5_trot_rank2": {"bets_with_official_payout": 49, "official_profit": 20.5, "official_roi": 0.418, "warning": "9 gagnants seulement : intervalle de confiance très large ; règle issue de 33 paris historiques."}
+  },
+  "conclusion": "Le modèle améliore très légèrement la log-loss du marché à T-24 (≈ +0,005 par course, ≈ 1,9 erreur-type) mais cet avantage est très inférieur au prélèvement PMU (marge ≈ 18 %) et à la dérive défavorable du rapport des gagnants (≈ -10 %). Aucun segment n'est validé : le moteur s'abstient sur 97 % des courses et n'attribue jamais le statut OPPORTUNITÉ VALIDÉE."
+}

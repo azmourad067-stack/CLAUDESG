@@ -1,0 +1,21 @@
+{"_note": "Fixture SYNTHÉTIQUE : noms de champs vérifiés sur le flux PMU (participants) et sur streamlit_app.py ; valeurs inventées pour le test.",
+ "participants": [
+  {"numPmu": 1, "nom": "ALPHA", "age": 5, "sexe": "HONGRES", "statut": "PARTANT", "musique": "1p2p3p(25)4p",
+   "driver": "A. JOCKEY", "entraineur": "T. TRAINER", "placeCorde": 3, "handicapPoids": 575,
+   "nombreCourses": 12, "nombreVictoires": 3, "nombrePlaces": 6, "gainsParticipant": {"gainsCarriere": 4500000},
+   "dernierRapportDirect": {"rapport": 3.4, "indicateurTendance": "-"}, "dernierRapportReference": {"rapport": 4.0}},
+  {"numPmu": 2, "nom": "BRAVO", "age": 4, "sexe": "FEMELLES", "statut": "PARTANT", "musique": "5p0p",
+   "jockey": {"nom": "B. JOCKEY"}, "entraineur": {"nom": "U. TRAINER"}, "placeCorde": 1, "handicapPoids": 56,
+   "dernierRapportDirect": {"rapport": 6.5}, "dernierRapportReference": {"rapport": 6.0}},
+  {"numPmu": 3, "nom": "CHARLIE", "age": 6, "sexe": "MALES", "statut": "NON_PARTANT", "musique": "2p",
+   "driver": "C. JOCKEY", "entraineur": "V. TRAINER", "dernierRapportDirect": {"rapport": 9.0}},
+  {"numPmu": 4, "nom": "DELTA", "age": 5, "sexe": "HONGRES", "statut": "PARTANT", "musique": "",
+   "driver": "D. JOCKEY", "entraineur": "W. TRAINER", "placeCorde": 2, "poidsConditionMonte": 58,
+   "dernierRapportReference": {"rapport": 2.9}},
+  {"numPmu": 5, "nom": "ECHO", "age": 7, "sexe": "HONGRES", "statut": "PARTANT", "musique": "3p3p",
+   "driver": "E. JOCKEY", "entraineur": "X. TRAINER", "placeCorde": 5, "handicapPoids": 57,
+   "dernierRapportDirect": {"rapport": 8.0}},
+  {"numPmu": 6, "nom": "FOXTROT", "age": 4, "sexe": "FEMELLES", "statut": "PARTANT", "musique": "Dp1p",
+   "driver": "F. JOCKEY", "entraineur": "Y. TRAINER", "placeCorde": 4, "handicapPoids": 55,
+   "dernierRapportDirect": {"rapport": 12.0}}
+ ]}

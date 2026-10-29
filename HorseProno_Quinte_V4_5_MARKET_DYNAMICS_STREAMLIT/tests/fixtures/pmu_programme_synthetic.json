@@ -1,0 +1,15 @@
+{"_note": "Fixture SYNTHÉTIQUE : structure et noms de champs vérifiés sur /programme/29102026 (reunions, numOfficiel, hippodrome.libelleCourt, courses, numOrdre, discipline, specialite, categorieParticularite, heureDepart en ms, distance, nombreDeclaresPartants, statut, rapportsDefinitifsDisponibles).",
+ "programme": {"reunions": [
+  {"numOfficiel": 1, "hippodrome": {"code": "VIN", "libelleCourt": "VINCENNES"}, "courses": [
+     {"numOrdre": 1, "libelle": "PRIX DES CEVENNES", "discipline": "ATTELE", "specialite": "TROT_ATTELE",
+      "heureDepart": 1793278500000, "distance": 2850, "nombreDeclaresPartants": 14, "statut": "PROGRAMMEE",
+      "rapportsDefinitifsDisponibles": false},
+     {"numOrdre": 2, "libelle": "PRIX DE FOUILLOY", "discipline": "ATTELE", "specialite": "TROT_ATTELE",
+      "categorieParticularite": "AUTOSTART", "heureDepart": 1793280300000, "distance": 2100,
+      "nombreDeclaresPartants": 12, "statut": "PROGRAMMEE"}]},
+  {"numOfficiel": 3, "hippodrome": {"libelleCourt": "CHANTILLY"}, "courses": [
+     {"numOrdre": 1, "libelle": "PRIX DU PLATEAU", "discipline": "HAIE", "heureDepart": 1793279000000,
+      "distance": 3500, "nombreDeclaresPartants": 10, "statut": "PROGRAMMEE"},
+     {"numOrdre": 2, "libelle": "PRIX DES OBSTACLES", "discipline": "PLAT", "heureDepart": 1793281000000,
+      "distance": 1600, "nombreDeclaresPartants": 6, "statut": "PROGRAMMEE"}]}
+ ]}}
